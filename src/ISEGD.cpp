@@ -8,6 +8,7 @@
 #include <cstring>
 #include <functional>
 #include <type_traits>
+#include <bit>
 
 using std::array;
 using std::endian;

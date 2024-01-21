@@ -5,6 +5,7 @@
 #include <cmath>
 #include <functional>
 #include <type_traits>
+#include <bit>
 
 using std::abs;
 using std::endian;
