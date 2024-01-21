@@ -12,7 +12,9 @@
 #define SEDAMAN_SEXCEPTION_HPP
 
 #include <exception>
+#ifndef _MSC_VER // MSVC doesn't seem to have experimental/propagate_const
 #include <experimental/propagate_const>
+#endif
 #include <memory>
 #include <string>
 
@@ -67,7 +69,11 @@ public:
 
 private:
     class Impl;
+#ifndef _MSC_VER
     std::experimental::propagate_const<std::unique_ptr<Impl>> pimpl;
+#else
+    std::unique_ptr<Impl > pimpl;
+#endif
 };
 } // namespace sedaman
 
