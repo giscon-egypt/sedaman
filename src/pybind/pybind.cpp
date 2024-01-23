@@ -1204,7 +1204,7 @@ PYBIND11_MODULE(pysedaman, m) {
 				 &ISEGD::general_header_survey_name,
 				 "Returns general header survey survey name.");
 	ISEGD_py.def("general_header_client_name",
-				 &ISEGD::general_header_survey_name,
+				 &ISEGD::general_header_client_name,
 				 "Returns general header client name.");
 	ISEGD_py.def("general_header_job_id", &ISEGD::general_header_job_id,
 				 "Returns general header job id.");
@@ -1214,7 +1214,7 @@ PYBIND11_MODULE(pysedaman, m) {
 				 &ISEGD::general_header_vibrator_info,
 				 "Returns general header vibrator source info.");
 	ISEGD_py.def("general_header_explosive_info",
-				 &ISEGD::general_header_airgun_info,
+				 &ISEGD::general_header_explosive_info,
 				 "Returns general header explosive source info.");
 	ISEGD_py.def("general_header_airgun_info",
 				 &ISEGD::general_header_airgun_info,
